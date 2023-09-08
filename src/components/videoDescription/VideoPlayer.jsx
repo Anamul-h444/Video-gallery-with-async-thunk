@@ -1,15 +1,15 @@
 import React from "react";
 
-const VideoPlayer = () => {
+const VideoPlayer = ({ video }) => {
   return (
     <iframe
       width="100%"
-      class="aspect-video"
-      src="https://www.youtube-nocookie.com/embed/6O4s7v28nlw"
-      title="Some video title"
-      frameborder=""
+      className="aspect-video"
+      src={video.link}
+      title={video.title}
+      frameBorder=""
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullscreen
+      allowFullScreen
     ></iframe>
   );
 };
