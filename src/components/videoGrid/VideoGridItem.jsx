@@ -2,21 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const VideoGridItem = ({ video }) => {
-  const {
-    author,
-    avatar,
-    date,
-    description,
-    duration,
-    id,
-    likes,
-    link,
-    tags,
-    thumbnail,
-    title,
-    unlike,
-    views,
-  } = video;
+  const { author, avatar, date, duration, id, thumbnail, title, views } = video;
   return (
     <div className="col-span-12 sm:col-span-6 md:col-span-3 duration-300 hover:scale-[1.03]">
       <div className="w-full flex flex-col">
